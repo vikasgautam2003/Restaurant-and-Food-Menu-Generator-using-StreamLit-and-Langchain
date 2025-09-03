@@ -1,94 +1,50 @@
 ---
-title: Ollama PDF Q&A Summarizer
-emoji: 📄
-colorFrom: blue
-colorTo: green
+title: Restaurant & Food Menu Generator
+emoji: 🍔
+colorFrom: orange
+colorTo: red
 sdk: streamlit
 sdk_version: "1.35.0"
-app_file: pdfSummary.py
+app_file: app.py
 pinned: false
 ---
 
-# 📄 Ollama PDF Q&A + Summarizer  
+# 🍔 Restaurant & Food Menu Generator  
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)](https://www.python.org/)  
 [![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red?logo=streamlit)](https://streamlit.io/)  
-[![Docker](https://img.shields.io/badge/Container-Docker-blue?logo=docker)](https://www.docker.com/)  
-[![Ollama](https://img.shields.io/badge/LLM-Ollama-black?logo=ai)](https://ollama.ai/)  
-[![TinyLlama](https://img.shields.io/badge/Model-TinyLlama-green)](https://huggingface.co/TinyLlama)  
+[![AI](https://img.shields.io/badge/AI-Powered-green?logo=ai)](https://huggingface.co/spaces)  
 
-> ⚡ An **AI-powered PDF Question-Answering and Summarization app** built with **Streamlit** and **Ollama (TinyLlama)**.  
-> Upload a PDF, ask questions, and get instant AI-generated answers + summaries.  
+> Generate unique restaurant and food menu items with the help of **AI + Streamlit**.  
+> Perfect for food startups, menu design, and creative inspiration.  
 
 ---
 
 ## 🚀 Features  
-✅ Upload any PDF document  
-✅ Ask **questions** about the document  
-✅ Get **summaries** powered by TinyLlama  
-✅ Modern **Streamlit web UI**  
-✅ Dockerized for easy deployment  
+✅ Generate random restaurant names  
+✅ Create unique food menu items  
+✅ Simple and interactive **Streamlit UI**  
+✅ One-click deploy on Hugging Face Spaces  
 
 ---
 
 ## 🛠️ Tech Stack  
-- **Backend (LLM)** → [Ollama](https://ollama.ai/) (TinyLlama model)  
 - **Frontend** → [Streamlit](https://streamlit.io/)  
-- **Containerization** → [Docker](https://www.docker.com/)  
+- **Backend (LLM-powered)** → Hugging Face Transformers  
 - **Language** → Python 3.10+  
 
 ---
 
 ## 📂 Project Structure  
 ```bash
-├── pdfSummary.py       # Main Streamlit app
-├── requirements.txt    # Python dependencies
-├── start.sh            # Startup script (Ollama + Streamlit)
-├── Dockerfile          # Container setup
-├── notes.txt           # Dev notes
-└── README.md           # Project docs
-
-🔹 Run Locally
-# 1. Install Ollama
-curl https://ollama.ai/install.sh | sh
-
-# 2. Pull TinyLlama model
-ollama pull tinyllama
-
-# 3. Install dependencies
-pip install -r requirements.txt
-
-# 4. Start the app
-streamlit run pdfSummary.py --server.port 8501 --server.address 0.0.0.0
-
-🔹 Run with Docker
-# 1. Build Docker image
-docker build -t ollama_pdf_app .
-
-# 2. Run the container
-docker run -p 8501:8501 ollama_pdf_app
+├── app.py             # Streamlit app
+├── requirements.txt   # Python dependencies
+└── README.md          # Project docs
 
 🎯 Use Cases
 
-Showcasing LLM integration skills in portfolio
+Food startups building unique menus
 
-Building AI-powered PDF assistants
+Restaurant branding and concept testing
 
-Demonstrating document Q&A systems
-
-📸 Demo
-
-👉 Add screenshots of your app here
-👉 Optional: embed a demo video/GIF
-
-💡 Future Improvements
-
-Support for larger models (Mistral, Llama 3)
-
-Free lightweight demo via Render / Railway / Hugging Face Spaces
-
-Enhanced UI/UX with chat-like interface
-
-👨‍💻 Author
-
-Vikas Gautam
+AI project showcase in portfolio
